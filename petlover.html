@@ -1,0 +1,1393 @@
+<html>
+	<head>
+		<title>PetLover - Pet Care Website Template</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.header
+			{
+				border:1px; yellowgreen;
+				background-color: greenyellow;
+				padding:20px;
+				
+			}
+			.header li
+			{
+				display:inline-block;
+				padding-left: 50px;
+			}
+			.header a
+			{
+				font-size:22px;
+				text-decoration:none;
+				display:block;
+				color: whitesmoke;
+				
+			}
+			.name
+			{
+				border:1px; yellowgreen;
+				
+				background-image: linear-gradient(lightfreen);
+
+			}
+			.name li
+			{
+				display:inline-block;
+				padding-left: 50px;
+				font-size:30px;
+				padding:20px;
+				text-decoration:none;
+				display:block;
+				font-weight: bolder;
+				display:inline-block;
+			}
+			.middle li
+			{
+				display:inline-block;
+				font-size:30px;
+				text-decoration:none;
+				display:block;
+				font-weight: bolder;
+				display:inline-block;
+				
+
+			}
+			.middle li p
+			{
+				position: absolute;
+ 				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				color: whitesmoke;
+
+			}
+			.middle li span
+			{
+				position: absolute;
+ 				top: 70%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				color: whitesmoke;
+  				font-size:50px;
+  			
+			}
+			.menu
+			{
+				border:none; yellowgreen;
+		
+				background-image: linear-gradient(#FC4A1A);
+
+			}
+			.menu li
+			{
+				display:inline-block;
+
+			}
+			.menu a
+			{
+				font-size:22px;
+				padding:20px;
+				text-decoration:none;
+				display:block;
+				color:ghostwhite;
+				color: darkred;
+			}
+			a:hover
+			{
+				
+			
+				color: forestgreen;
+				 transition: transform .2s;
+			}
+			.vaccination
+			{
+				display: flex;
+				flex-wrap: wrap;
+				padding-left: 210px;
+				border:1px; yellowgreen;
+				background-image: linear-gradient(lightgreen);
+				background-color: greenyellow;
+				width: 300px;
+				margin-left: 20px;
+			
+
+
+			}
+			.vaccination li
+
+			{
+
+				flex: 50%;
+				padding: 10px;
+				display:inline-block;
+				padding-top: 20px;
+
+			}
+			.vaccination li p
+			{
+				position: absolute;
+ 				top: 150%;
+  				left: 55%;
+  				transform: translate(-50%, -50%);
+  				font-size:40px;
+  				color: green;
+  			
+  			}
+  			.vaccination li i
+			{
+				position: absolute;
+ 				top: 165%;
+  				left: 58%;
+  				transform: translate(-50%, -50%);
+  				font-size:40px;
+  				font-weight: bolder;
+  				font-family: sans-serif;
+  			
+  			}
+  			.vaccination li img
+			{
+				position: absolute;
+ 				top: 195%;
+  				left: 69%;
+  				transform: translate(-50%, -50%);
+  				font-size:60px;
+  				font-weight: bolder;
+  				font-family: sans-serif;
+  			
+  			}
+  			.btn 
+  			{
+				  display: inline-block;
+				  font-weight: 400;
+				  color: #777777;
+				  text-align: center;
+				  vertical-align: middle;
+				  user-select: none;
+				  background-color: transparent;
+				  border: 1px solid transparent;
+				  padding: 0.375rem 0.75rem;
+				  font-size: 1rem;
+				  line-height: 1.5;
+				  border-radius: 0.25rem;
+				  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+				}
+				.btn 
+				{
+				    transition: none;
+				    background-color: orangered;
+				    color: darkred;
+
+				 }
+
+				.btn:hover
+				{
+				  color: #777777;
+				  text-decoration: none;
+				  
+
+				}
+
+				.btn:focus, .btn.focus
+				{
+				  outline: 0;
+				  box-shadow: 0 0 0 0.2rem rgba(237, 100, 54, 0.25);
+				}
+				.btn-dark 
+				{
+				  color: #fff;
+				  background-color: #181818;
+				  border-color: #181818;
+				}
+
+				.btn-dark:hover
+				{
+				  color: #fff;
+				  background-color: #050505;
+				  border-color: black;
+				}
+
+				.btn-dark:focus, .btn-dark.focus
+				{
+				  color: #fff;
+				  background-color: #050505;
+				  border-color: black;
+				  box-shadow: 0 0 0 0.2rem rgba(59, 59, 59, 0.5);
+				}
+				.btn-block
+				{
+				  display: block;
+				  width: 50%;
+				}
+
+				.btn-block + .btn-block 
+				{
+				  margin-top: 0.5rem;
+				}
+
+				input[type="submit"].btn-block,
+				input[type="reset"].btn-block,
+				input[type="button"].btn-block {
+				width: 100%;
+				}
+				.btn-primary
+				{
+				 box-shadow: 0 0 0 0.2rem rgba(240, 123, 84, 0.5);
+				}
+				.mt-3
+				{
+				 margin-top: 1rem !important;
+				}
+				.px-4
+				{
+					padding-left: 1.5rem !important;
+				}
+				.btn-lg
+				{
+					 padding-right: 0.75rem;
+  					 padding-left: 0.75rem;
+  				}
+
+
+
+
+
+			/*About Us Section Start*/
+
+
+
+				.row 
+				{
+					  display: flex;
+					  flex-wrap: wrap;
+					  margin-right: -15px;
+					  margin-left: -15px;
+				}
+				.py-5 ,.pt-5
+				{
+					  padding-bottom: 3rem !important;
+					  padding-left: 50px;
+					 
+				}
+				.col-lg-7 
+				{
+				    flex: 0 0 58.33333%;
+				    max-width: 58.33333%;
+				}
+				.pb-5
+				{
+				  padding-bottom: 3rem !important;
+				}
+				.pb-lg-0,.py-lg-0
+			    {
+				    padding-bottom: 0 !important;
+				 }
+				.px-lg-5 
+				{
+				    padding-left: 1rem !important;
+				}
+
+
+				.py-3,.pb-3
+				{
+				  padding-top: 1rem !important;
+				}
+				.text-secondary
+				{
+		  			color: #65C178 !important;
+		  			margin-bottom: 1rem !important;
+
+				}
+				.display-4 
+				{
+		  			font-size: 3.5rem;
+		  			font-weight: 300;
+		  			line-height: 1.2;
+		  			margin-bottom: 1.5rem !important;
+				}
+				.mb-4
+				{
+					margin-bottom: 1.5rem !important;
+					font-weight: bolder;
+				}
+				.text-primary 
+				{
+					color: #ED6436 !important;
+				}
+				.list-inline 
+				{
+				  padding-left: 0;
+				  list-style: none;
+				}
+				.col-lg-5 
+				{
+				    flex: 0 0 41.66667%;
+				    max-width: 41.66667%;
+				    position: absolute;
+ 					top: 262%;
+  					left: 70%;
+  					transform: translate(-50%, -50%);
+				}
+				.col-lg-11 
+				{
+				    flex: 0 0 41.66667%;
+				    max-width: 50.66667%;
+				    position: absolute;
+ 					top: 522%;
+  					left: 75%;
+  					transform: translate(-50%, -50%);
+				}
+				.row 
+				{
+				  display: flex;
+				  flex-wrap: wrap;
+				  margin-right: -15px;
+				  margin-left: -15px;
+				}
+				.px-3 
+				{
+ 					 padding-left: 1rem !important;
+				}
+				.col-12 
+				{
+				  flex: 0 0 100%;
+				  max-width: 100%;
+				}
+				.p-0 
+				{
+				  padding: 0 !important;
+				}
+				.col-6
+				 {
+ 					 flex: 0 0 50%;
+				     max-width: 50%;
+				}
+				.img-fluid
+				 {
+					  max-width: 100%;
+					  height: auto;
+				}
+				.w-100 
+				{
+ 					 width: 100w !important;
+				}
+				.abouti1,.abouti2,.abouti3
+				{
+					color: red;
+				}
+
+			/* About Us Section End*/
+
+
+
+
+
+
+			/* Our Service Section Start*/
+				.text-center 
+				{
+  					text-align: center !important;
+				}
+				.mb-5
+				{
+					 margin-bottom: 3rem !important;
+					 font-weight: bolder;
+				}
+				.flex-column
+
+				{
+					display: flex !important;
+  					flex-direction: column !important;
+				}
+				.col-md-6 
+				{
+   					 flex: 0 0 50%;
+    				max-width: 50%;
+  				}
+  				.col-lg-4 
+  				{
+				    flex: 0 0 33.33333%;
+				    max-width: 33.33333%;
+				}
+				.bg-white 
+				{
+ 					 background-color: #fff !important;
+				}
+				.mb-2,
+				.my-2 
+				{
+  					margin-bottom: 0.5rem !important;
+				}
+				.p-3
+				 {
+ 					 padding: 1rem !important;
+				}
+				.p-sm-5 
+				{
+    				padding: 3rem !important;
+ 				}
+
+
+ 			/*Our service section close*/
+
+
+
+
+ 			/*feature section start*/
+
+ 			.featurei1,.featurei2,.featurei3,.featurei4
+ 			{
+ 				color: red;
+ 			}
+
+
+ 			/*feature section End*/
+
+
+
+
+
+
+
+ 			
+			.card-body
+			 {
+				  flex: 1 1 auto;
+				  min-height: 1px;
+				  padding: 1.25rem;
+			}
+			.text-center
+			 {
+  				text-align: center !important;
+			}
+			
+		
+			
+
+
+
+
+
+		/* Price Plan Section Start*/
+
+
+		.priceh4
+		{
+			padding-right:180px
+
+		}
+		.priceh1
+		{
+			padding-right:150px
+		}
+		.price li
+		{
+				display:inline-block;
+				font-size:30px;
+				text-decoration:none;
+				display:block;
+				font-weight: bolder;
+				display:inline-block;
+				
+
+		}
+		.price li p
+		{
+				position: absolute;
+ 				top: 605%;
+  				left: 20%;
+  				transform: translate(-50%, -50%);
+  				color: orangered;
+  				font-weight: 900;
+
+		}
+		.price li span
+		{
+				position: absolute;
+ 				top: 608%;
+  				left: 49%;
+  				transform: translate(-50%, -50%);
+  				color: darkgreen;
+
+		}
+		.price li i
+		{
+				position: absolute;
+ 				top: 608%;
+  				left: 80%;
+  				transform: translate(-50%, -50%);
+  				color: darkred;
+
+		}
+		.price img
+		{
+
+  				filter: drop-shadow(8px 8px 10px gray);
+
+		}
+		.priceimg1
+		{
+			position: absolute;
+			left: 80;
+		}
+		.priceimg2
+		{
+			position: absolute;
+			left: 490;
+		}
+		.priceimg3
+		{
+			position: absolute;
+			left: 900;
+		}
+		.priceli1
+		{
+			color:whitesmoke;
+		}
+		.priceli2
+		{
+			padding-top:200px;
+			padding-left:200px;
+			display: inline-block;
+		}
+		.priceli3
+		{
+			padding-top:200px;
+			padding-left:400px;
+			display: inline-block;
+		}
+		.priceli4
+		{
+			padding-top:200px;
+			padding-left:330px;
+			display: inline-block;
+		}
+		.priceli5
+		{
+			padding-top:20px;
+			padding-left:200px;
+			display: inline-block;
+		}
+		.priceli6
+		{
+			padding-top:20px;
+			padding-left:390px;
+			display: inline-block;
+		}
+		.priceli7
+		{
+			padding-top:20px;
+			padding-left:320px;
+			display: inline-block;
+		}
+		.priceli8
+		{
+			padding-top:20px;
+			padding-left:200px;
+			display: inline-block;
+		}
+		.priceli9
+		{
+			padding-top:20px;
+			padding-left:340px;
+			display: inline-block;
+		}
+		.priceli10
+		{
+			padding-top:20px;
+			padding-left:265px;
+			display: inline-block;
+		}
+		.priceli11
+		{
+			padding-top:20px;
+			padding-left:200px;
+			display: inline-block;
+		}
+		.priceli12
+		{
+			padding-top:20px;
+			padding-left:320px;
+			display: inline-block;
+		}
+		.priceli13
+		{
+			padding-top:20px;
+			padding-left:250px;
+			display: inline-block;
+		}
+		.priceli14
+		{
+			padding-left:200px;
+			padding-top:20px;
+			display: inline-block;
+		}
+		.priceli15
+		{
+			padding-left:370px;
+			padding-top:20px;
+			display: inline-block;
+		}
+		.priceli16
+		{
+			padding-left:300px;
+			padding-top:20px;
+			display: inline-block;
+		}
+		.pricei1,.pricei2,.pricei3,
+		.pricei4,.pricei5,.pricei6,
+		.pricei8,.pricei9,.pricei12
+		{
+			color: green;
+		}
+		.pricei7,.pricei10,
+		.pricei11
+		{
+			color: red;
+		}
+
+	
+		/* price Plan section End*/
+
+		/* Team section Start*/
+
+			.teamli1
+			{
+				display:inline-block;
+				padding-left: 620px;
+				padding-top: 20px;
+				font-weight: bolder;
+			}
+			.teamli2
+			{
+				display:inline-block;
+				padding-left: 400px;
+			}
+
+			.hello img:hover
+			 {
+  				animation: shake 1s;
+  				animation-iteration-count: infinite;
+  			}
+		  	@keyframes shake
+		  	 {
+				  0% { transform: translate(1px, 1px) rotate(0deg); }
+				  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+				  20% { transform: translate(-3px, 0px) rotate(1deg); }
+				  30% { transform: translate(3px, 2px) rotate(0deg); }
+				  40% { transform: translate(1px, -1px) rotate(1deg); }
+				  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+				  60% { transform: translate(-3px, 1px) rotate(0deg); }
+				  70% { transform: translate(3px, 1px) rotate(-1deg); }
+				  80% { transform: translate(-1px, -1px) rotate(1deg); }
+				  90% { transform: translate(1px, 2px) rotate(0deg); }
+				  100% { transform: translate(1px, -2px) rotate(-1deg); }
+			}
+			.round img:hover
+			 {
+				  transform: scaleX(-1);
+				  transform: scaleX(-1);
+			}
+
+		    img:hover
+			{
+
+			  filter: grayscale(100%);
+			  filter: grayscale(100%);
+
+
+			}
+			.teamli3
+			{
+				display:inline-block;
+				padding-left: 20px;
+			}
+			.teamli4
+			{
+				display:inline-block;
+				padding-left: 110px;
+			}
+			.teamli5
+			{
+				display:inline-block;
+				padding-left: 220px;
+			}
+			.teamli6
+			{
+				display:inline-block;
+				padding-left:200px;
+			}
+			.teamli7
+			{
+				display:inline-block;
+				padding-left:220px;
+			}
+			.teamdiv4
+			{
+				padding-left:40px;
+				text-indent: 1em;
+			}
+			.teamspan1
+
+			{
+				padding-left:230px; 
+				text-indent:1em;
+			}
+			.teamspan2
+			{
+				padding-left:190px; 
+				text-indent:1em;
+			}
+			.teamspan3
+			{
+				padding-left:190px; 
+				text-indent:1em;
+			}
+
+
+			/* Team section End*/
+
+
+
+			/* Testimonial section Start */
+
+			.testimg1
+			{
+				padding-left:100px;
+				height: 200px;
+			}
+			.testdisplay
+			{
+				display:inline-block;
+			}
+			.testh2
+			{
+				font-weight:bolder;
+				text-indent: 1em;
+				display: inline-block;
+			}
+			.testimg2
+			{
+				padding-left:50px;
+				height: 200px;
+			}
+			.testimg3
+			{
+				padding-left:50px;
+				height: 200px;
+			}
+			.testp1
+
+			{
+				padding-left:100px;
+				display:inline-block;
+				font-weight: bold;
+				color: black;
+				font-family: sans-serif;
+			}
+			.testp2
+			{
+				padding-left:100px;
+				display:inline-block;
+				font-weight: bold;
+				color: black;
+				font-family: sans-serif;
+			}
+			.testp3
+			{
+				padding-left:110px;
+				display:inline-block;
+				font-weight: bold;
+				color: black;
+				font-family: sans-serif;
+			}
+			.teamh5-1
+			{
+				color:red;
+			}
+			.teamh5-2
+			{
+				padding-left:10px;
+				color:red;
+			}
+			.teamh5-3
+			{
+				padding-left:20px;color:red
+			}
+			.teamh5-4
+			{
+				padding-left:15px;
+				color:red;
+			}
+
+
+			/* Testimonial section End */
+
+
+			
+
+
+			/* Pet Blog section Start */
+
+			.blogimg1
+			{
+
+				padding-left:100px;height: 200px;width: 350px;
+			}
+			.blogimg2
+			{
+
+				padding-left:60px;height: 200px;width: 350px;
+			}
+			.blogimg1idsplay
+			{
+				display:inline-block;
+			}
+			.blogimg3
+			{
+				padding-left:50px;
+				height: 200px;
+				width: 350px;
+			}
+			.blogspani1
+			{
+				padding-left:150px
+			}
+			.blogspani4
+			{
+				padding-left:250px;
+			}
+			.blogp1
+			{
+				padding-left:100px;
+				display:inline-block;
+				font-weight: bold;
+				color: black;
+				font-family: sans-serif;
+			}
+			.blogp2
+			{
+				padding-left:100px;
+				display:inline-block;
+				font-weight: bold;
+				color: black;
+				font-family: sans-serif;
+			}
+			.blogp3
+			{
+				padding-left:100px;
+				display:inline-block;
+				font-weight: 
+				bold;color: black;
+				font-family: sans-serif;
+			}
+			.bloga1
+			{
+				padding-left:230px;
+			}
+			.bloga2a3
+			{
+				padding-left:350px;
+			}
+
+
+
+			/* Pet Blog section End */
+
+
+
+			/* footer start */
+			.footer
+			{
+				background-color:black;
+				color:whitesmoke;
+				font-family: sans-serif;
+
+			}
+			.footer li
+			{
+				display:inline-block
+			}
+			.footer li p
+			{
+				padding-left: 20px;
+
+
+			}
+
+			.li1
+			{
+				padding-left: 20px;
+			}
+			.li2
+			{
+				padding-left: 60px;
+			}
+			.footfb
+			{
+				color:whitesmoke;
+			}
+			.footindent
+			{
+				text-indent: 1rem;
+			}
+			.li3
+			{
+				padding-left: 130px;
+			}
+			.footli3a
+			{
+				color:whitesmoke;
+				padding-left: 190px;
+			}
+			.footli4i1
+			{
+				padding-left:80px;
+			}
+			.footli4i2
+			{
+				padding-left:110px;
+			}
+			.footli5
+			{
+				margin-left:10px;
+			}
+			.footli5pad-word
+			{
+				padding-left: 400px;
+				word-spacing: 50px;
+			}
+
+
+            /* footer End -->*/
+
+           
+
+		</style>
+		
+	</head>
+	<body style="font-family:  sans-serif;overflow-x: hidden;" >
+		<div class="header" style="background-color: lightgreen;">
+			<li><a href="">FAQ</a></li>
+			<li><a href="">HELP</a></li>
+			<li><a href="">SUPPORT</a></li>
+			<li style="padding-left: 500px;"><a href="https://www.facebook.com/" class="fb"> <i class="fa fa-facebook fa-fw"></i></a></li>
+			<li><a href="https://www.twitter.com/" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+			<li><a href="https://www.linkdin.com/" class="linkdin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+		</div>
+		<div class="name">
+			<li><font color="red" size="40px">Pet</font>Lover</li>
+			<li style="padding-left:500px"><font size="5px">Opening Hours</font></br><font size="4px" style="padding-left:10px"   >  08:00AM-9:00PM</font> </li>
+			<li><font size="5px"> E-mail Us</font></br><font color="red" size="4px">info@examphle.com </font> </li>
+			<li><font size="5px"> Call Us</font></br><font color="red" size="4px">145-230-2369</font> </li>
+		</div>
+		<div class="menu">
+			<li class="active"><a href="#"><span class="fa fa-home"> Home</span></a></li>
+			<li><a href=""><span class="fa fa-money"> About</span></a></li>
+			<li><a href=""><span class="fa fa-group"> Service</span></a></li>
+			<li><a href=""><span class="fa fa-pencil-square-o"> Price</span></a></li>
+			<li><a href=""><span class="fa fa-anchor"> Booking</span></a></li>
+			<li><a href=""><i class="fa fa-file"> Page</i></a></li>
+			<li><a href=""><i class="fa fa-mobile-phone"> Contect</i></a></li>
+
+		</div>
+		<div class="middle">
+			<li><img src="pet.jpg" width="1335px" height="700px"></li>
+			<li><p>Best Pet Service</p></li>
+			<li><span>Pet Spa & Grooming</span></li>
+		
+		</div>
+		<div class="vaccination">
+			
+				
+					<li style="padding-top: 100px;"><input type="text" placeholder="Your Name" required="required" /></li>
+					<li><input type="email"placeholder="Your Email" required="required" /></li>
+					<li><input type="text"  placeholder="Reservation Date" data-target="#date" data-toggle="datetimepicker"/> </li>
+					<li><input type="text" placeholder="Reservation Time" data-target="#time" data-toggle="datetimepicker"/></li>
+					<li><select>
+                                    <option selected>Select A Service</option>
+                                    <option value="1">Service 1</option>
+                                    <option value="2">Service 1</option>
+                                    <option value="3">Service 1</option>
+                        </select></li>
+					<li><button class="btn btn-dark btn-block border-0 py-3" type="submit">Book Now</button></li>
+					<li><p style="padding-left: 100px;">Going For Vacation?</p></li>
+					<li><i>Book For<font color="red"> Your Pet</font></i></li>
+					<li><img src="1.jpg"></li>
+				
+				
+		</div>
+
+		<!-- About Us Section Start-->
+
+		<div class="py-5">
+			<div class="row py-5">
+				 <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">				
+				 	<h2 class="text-secondary">About Us</h2>
+					<h1 class="display-4"><span class="text-primary">Boarding</span> & <span class="text-secondary">Daycare</span></h1>
+					<p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore </br> sed et. Sit  rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et</br> sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+					<ul class="list-inline">
+                    	
+                    	<li><i class="fa fa-check-square-o abouti1"></i> Best In Industry</li>
+                    	<li><i class="fa fa-check-square-o abouti2"></i> Emergency Services</li>
+                    	<li><i class="fa fa-check-square-o abouti3"></i> 24/7 Customer Support</li>
+                	</ul>
+                	<a href="" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+				</div>
+				<div class="col-lg-5">
+                <div class="row px-3">
+                    <div class="col-12 p-0">
+                        <img style="padding-top:5%" class="img-fluid w-100" src="about-1.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="about-2.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="about-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+			</div>
+
+		</div>
+
+		<!-- About Us Section End-->
+
+
+		<!-- Our Service Section Start-->
+
+		<div>
+			<div class=" flex-column text-center mb-5" sty>
+				<h4 class="text-secondary mb-3" style="margin-top: 150px;">Our Services</h4>
+				<h1 class="display-4 m-0"><span class="text-primary">Premium</span> Pet Services</h1>
+			</div>
+			<div class="row pb-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3><img src="pet bording.jpg"/></h3>
+                        <h3 class="mb-3">Pet Boarding</h3>
+                        <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3><img src="Pet Feeding.jpg"/></h3>
+                        <h3 class="mb-3">Pet Feeding</h3>
+                        <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3><img src="Pet grooming.jpg"/></h3>
+                        <h3 class="mb-3">Pet Grooming</h3>
+                        <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3><img src="pet traning.jpg"/></h3>
+                        <h3 class="mb-3">Pet Training</h3>
+                        <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3><img src="pet ecercise.jpg"></h3>
+                        <h3 class="mb-3">Pet Exercise</h3>
+                        <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3><img src="pet treatment.jpg"/></h3>
+                        <h3 class="mb-3">Pet Treatment</h3>
+                        <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+
+		<!-- Our Service Section End-->
+
+		<!-- Feature Section Start-->
+
+		<div class="py-5">
+			<div class="row py-5">
+				 <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">				
+				 	<h2 class="text-secondary">Why Choose Us?</h2>
+					<h1 class="display-4"><span class="text-primary">Special Care</span> & <span class="text-secondary">On Pets</span></h1>
+					<p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore </br> sed et. Sit  rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et</br> sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+					<ul class="list-inline">
+                    
+                    	<li><h5><i class="fa fa-check-square-o featurei1"></i> Best In Industry</h5></li>
+                    	<li><h5><i class="fa fa-check-square-o featurei2"></i> Emergency Services</h5></li>
+                    	<li><h5><i class="fa fa-check-square-o featurei3"></i> 24/7 Customer Support</h5></li>
+                    	<li><h5><i class="fa fa-check-square-o featurei4"></i> Special Care</h5></li>
+                	</ul>
+                	
+				</div>
+				<div class="col-lg-11">
+                <div class="row px-3">
+                    <div class="col-12 p-0 round">
+                        <img class="img-fluid w-100 " src="Feature.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+			</div>
+
+		</div>
+
+		<!-- Feature Section End-->
+
+
+
+		<!-- Pricing Plan Section Start-->
+
+		<div class="container-fluid bg-light pt-5 pb-4">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3 priceh4">Pricing Plan</h4>
+                <h1 class="display-4 m-0 priceh1">Choose the <span class="text-primary">Best Price</span></h1>
+            </div>
+            <div class="price">
+            	<img class="priceimg1" src="price-1.jpg">
+            	<img class="priceimg2" src="price-2.jpg">
+            	<img class="priceimg3" src="price-3.jpg">
+            	<li class="priceli1"><p style="color:greenyellow;">basic</br></br><sup>$</sup>49<sub>/mo</sub></p></li>
+            	<li class="priceli1"><span style="color:greenyellow;padding-left: 30px;">Standard</br></br><sup>$</sup>99<sub>/mo</sub></span></li>
+            	<li class="priceli1"><i style="color:greenyellow;padding-left: 15px;">Premium</br></br><sup>$</sup>149<sub>/mo</sub></i></li>
+
+
+            </div>
+           </div>
+         </div>  
+            <div>
+            	<li class="priceli2"><i class="fa fa-check-square-o pricei1"></i> Feeding</li>
+            	<li class="priceli3"><i class="fa fa-check-square-o pricei2"></i> Feeding</li>
+            	<li class="priceli4"><i class="fa fa-check-square-o pricei3"></i> Feeding</li>
+            	<li class="priceli5"><i class="fa fa-check-square-o pricei4"></i> Boarding</li>
+            	<li class="priceli6"><i class="fa fa-check-square-o pricei5"></i> Boarding</li>
+            	<li class="priceli7"><i class="fa fa-check-square-o pricei6"></i> Boarding</li>
+            	<li class="priceli8"><i class="fa fa-window-close pricei7"></i> Spa & Grooming</li>
+            	<li class="priceli9"><i class="fa fa-check-square-o pricei8"></i> Spa & Grooming</li>
+            
+            	<li class="priceli10"><i class="fa fa-check-square-o pricei9"></i> Spa & grooming</li>
+            	<li class="priceli11"><i class="fa fa-window-close pricei10"></i> Vaterinary Medicine</li>
+            	<li class="priceli12"><i class="fa fa-window-close pricei11"></i> Vaterniry Medicine</li>
+            	<li class="priceli13"><i class="fa fa-check-square-o pricei12"></i> Vaterniry Medicine</li>
+            	<li class="priceli14"><button class="btn" type="submit">Signup Now</button></li>
+            	<li class="priceli15"><button class="btn" type="submit">Signup Now</button></li>
+            	<li class="priceli16"><button class="btn" type="submit">Signup Now</button></li>
+            </div>
+            </div>
+
+            <!--Pricing Plan Section End-->
+
+
+            <!-- Team section Start-->
+
+            <div>
+            	<li class="teamli1"><h4 class="text-secondary mb-3">Team Member</h4><li>
+            	<li class="teamli2"><h1 class="display-4 m-0">Meet Our<span class="text-primary">Team Member</span></h1></li>
+            </div>
+            <div class="hello">
+            	
+            	<li class="teamli3"><img src="team-1.jpg" alt=""></li>
+            	<li class="teamli3"><img src="team-2.jpg" alt=""></li>
+            	<li class="teamli3"><img src="team-3.jpg" alt=""></li>
+            	<li class="teamli3"><img src="team-4.jpg" alt=""></li>
+            </div>
+            <div>
+            	<li class="teamli4"><h3>Mollie Ross</br></h3><h5 class="teamh5-1">Founder & Ceo</h5></li>
+            	<li class="teamli5"><h3>Jennifer Page</br></h3><h5 class="teamh5-2">Chef Executive</h5></li>
+            	<li class="teamli6"><h3>Kate Glover</br></h3><h5 class="teamh5-3">Doctor</h5></li>
+            	<li class="teamli7"><h3>Lilly Fry</br></h3><h5 class="teamh5-4">Trainer</h5></li>
+             </div>
+             <!--<div class="teamdiv4">
+
+             	<a href="#" class="fa fa-facebook"></a>
+             	<a href="#" class="fa fa-twitter"></a>
+             	<a href="#" class="fa fa-instagram"></a>
+             	<a href="#" class="fa fa-linkedin"></a>
+
+             <span class="teamspan1">
+             	<a href="#" class="fa fa-facebook"></a>
+             	<a href="#" class="fa fa-twitter"></a>
+             	<a href="#" class="fa fa-instagram"></a>
+             	<a href="#" class="fa fa-linkedin"></a>
+             </span>
+             <span class="teamspan2">
+             	<a href="#" class="fa fa-facebook"></a>
+             	<a href="#" class="fa fa-twitter"></a>
+             	<a href="#" class="fa fa-instagram"></a>
+             	<a href="#" class="fa fa-linkedin"></a>
+             </span>
+             <span class="teamspan3">
+             	<a href="#" class="fa fa-facebook"></a>
+             	<a href="#" class="fa fa-twitter"></a>
+             	<a href="#" class="fa fa-instagram"></a>
+             	<a href="#" class="fa fa-linkedin"></a>
+             </span>
+
+
+           </div>-->
+
+
+        </div>
+
+
+        <!-- Team End -->
+
+
+    	<!-- Testimonial Start -->
+
+
+
+
+             
+            <div class="d-flex flex-column text-center mb-5">
+                	<h4 class="text-secondary mb-3">Testimonial</h4>
+               	 	<h1 class="display-4 m-0">Our Client <span class="text-primary">Says</span></h1>
+            </div>
+          
+            	
+            <div class="d-flex align-items-end mb-3 mt-n4 ml-n4">
+
+            	<img class="img-fluid testimg1" src="testimonial-1.jpg" alt="" class="testdisplay">
+            	<h2 class="testh2"> Client Name</br><i class="testdisplay"> Profession </i></h2>
+
+         		<img class="img-fluid testimg2" src="testimonial-2.jpg" alt="" class="testdisplay">
+ 				<h2 class="testh2"> Client Name</br><i class="testdisplay"> Profession </i></h2>
+
+ 				<img class="img-fluid testimg3" src="testimonial-3.jpg" alt="" class="testdisplay">
+ 				<h2 class="testh2"> Client Name</br><i class="testdisplay"> Profession </i></h2>
+
+
+
+                <div>
+                	<p class="testp1">Sed ea amet kasd elitr stet, stet rebum</br>et ipsum est duo elitr eirmod clita lorem.</br>Dolor tempor ipsum sanct clita</p>
+                	<p class="testp2">Sed ea amet kasd elitr stet, stet rebum</br>et ipsum est duo elitr eirmod clita lorem.</br>Dolor tempor ipsum sanct clita</p>
+                	<p class="testp3">Sed ea amet kasd elitr stet, stet rebum</br>et ipsum est duo elitr eirmod clita lorem.</br>Dolor tempor ipsum sanct clita</p>
+                </div>
+
+                
+
+
+            </div>
+
+            <!-- Testimonial End -->
+
+            <!-- Pet Blog Start -->
+
+            <div class="d-flex flex-column text-center mb-5">
+                	<h4 class="text-secondary mb-3">Pet Blog</h4>
+               	 	<h1 class="display-4 m-0">Updates From <span class="text-primary">Blog</span></h1>
+            </div>
+
+            <img class="abc blogimg1 img-fluid" class="img-fluid" src="blog-1.jpg" alt="" class="blogimg1idsplay">
+            <img class="img-fluid blogimg2" src="blog-2.jpg" alt=""  class="blogimg1idsplay">
+            <img class="img-fluid blogimg3" src="blog-3.jpg" alt="" class="blogimg1idsplay">
+            <div class="d-flex mb-3">
+                            <span class="mr-2"><i class="fa fa-user text-muted blogspani1"></i> Admin</span>
+                            <span spanclass="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</span>
+                            <span spanclass="mr-2"><i class="fa fa-comments text-muted"></i> 15</span>
+                            <span class="mr-2"><i style="padding-left:220px" class="fa fa-user text-muted"></i> Admin</span>
+                            <span class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</span>
+                            <span class="mr-2"><i class="fa fa-comments text-muted"></i> 22</span>
+                            <span class="mr-2"><i style="padding-left:180px" class="fa fa-user text-muted"></i> Admin</span>
+                            <span spanclass="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</span>
+                            <span class="mr-2"><i class="fa fa-comments text-muted"></i> 35</span>
+            </div>
+            <div>
+                	<p class="blogp1">Sed ea amet kasd elitr stet,stet rebum</br>et ipsum est duo elitr eirmod clita lorem.</br>Dolor tempor ipsum sanct clita</p>
+                	<p class="blogp2">Sed ea amet kasd elitr stet,stet rebum </br> et ipsum est duo elitr eirmod clita lorem.</br>Dolor tempor ipsum sanct clita</p>
+                	<p class="blogp3">Sed ea amet kasd elitr stet,stet rebum</br>et ipsum est duo elitr eirmod clita lorem.</br>Dolor tempor ipsum sanct clita</p>
+             </div>
+             <div class="read">
+             	<a class="font-weight-bold bloga1" href="">Read More</a>
+             	<a class="font-weight-bold bloga2a3" href="">Read More</a>
+             	<a class="font-weight-bold bloga2a3" href="">Read More</a>
+             </div>
+
+                 <!--  Pet Blog End -->
+
+                 <!-- footer start -->
+
+
+            <div class="footer">
+            
+                <li><h1><span class="text-primary li1">Pet</span>Lover</h1>
+                	<p>Ipsum amet sed vero et lorem stet eos ut, labore sed </br>sed stet sea est ipsum ut. Volup amet ea sanct ipsum,</br> dolore vero lorem no duo eirmod. Eirmod amet ipsum </br>no ipsum lorem clita ut. Ut sed sit lorem ea lorem sed, </br>amet stet sit sea ea diam tempor kasd kasd. Diam </br>nonumy etsit tempor ut sed diam sed et ea</p></br></br>
+				 </li>
+
+
+                <li><h1><span class="text-primary li2">Get In Touch</span></h1>
+                	<i  class="fa fa-map-marker li2" aria-hidden="true"></i> 123 Street, New York, USA</br></br>
+                	<i  class="fa fa-phone li2" aria-hidden="true"></i> +012 345 67890</br></br> 
+                	<i  class="fa fa-envelope li2" aria-hidden="true"></i> info@example.com</br></br>
+                	<i  class="fa fa-envelope li2" aria-hidden="true"></i> info@petlover.com</br></br>
+	                <a  class="li2"href="https://www.facebook.com/"><i  class="fa fa-facebook-square footfb" aria-hidden="true"></i></a>
+	                <a href="https://www.instagram.com/"><i class="fa fa-instagram footfb footindent" aria-hidden="true"></i></a>
+	                <a href="https://www.twitter.com/"> <i class="fa fa-twitter-square footfb footindent" aria-hidden="true"></i></a>
+	                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square footfb footindent" aria-hidden="true"></i></a>
+	            </li>
+
+
+	            <li><h1><span class="text-primary li3">Popular Links</span></h1>
+	            	
+	            	<a class="footli3a" href=""><i class="fa fa-angle-right footfb" aria-hidden="true"></i> Home</br></br></a>
+	            	<a class="footli3a" href=""><i class="fa fa-angle-right footfb" aria-hidden="true"></i> About us</br></br></a>
+	            	<a class="footli3a" href=""><i class="fa fa-angle-right foot fb" aria-hidden="true"></i> Our Service</br></br></a>
+	            	<a class="footli3a" href=""><i class="fa fa-angle-right footfb" aria-hidden="true"></i> Our Team</br></br></a>
+	            	<a class="footli3a"href=""><i class="fa fa-angle-right footfb" aria-hidden="true"></i> Contact Us</a></br>
+	            </li>
+
+                <li><h1><span class="text-primary"style="padding-left: 80px;">Newsletter</span></h1></br>
+                	<i class="footli4i1"><input type="text" class="form-control border-0" placeholder="Your Name" required="required" /></i></br></br>
+                	<i class="footli4i1"><input type="email" class="form-control border-0" placeholder="Your Email" required="required" /></i></br></br>
+                	
+                	<i class="footli4i2"><button class="btn" type="submit">Submit Now</button></i></br></br>
+	                
+	            </li>
+
+
+	            <li class="footli5"><h4><span class="text-primary"> &copy; <a href="#">Your Site Name</a>. All Rights Reserved. Designed by<a href="https://starinfotech.com"> Ajmer codex</a></span></h4>
+
+               	<li class="footli5pad-word">
+               		<h4>
+           	
+		            	<a class="footfb" href="#">Privacy</a></i>
+	                	<a class="footfb" href="#">Terms</a>
+	                    <a class="footfb" href="#">FAQs</a>
+	                	<a class="footfb" href="#">Help</a>
+               		 </h4>
+
+               
+                </li>
+                  
+                   
+                </li>
+              
+            
+
+                            
+         
+            </div>
+
+            <!-- footer End -->
+
+
+	
+
+	</body>
+
+</html
